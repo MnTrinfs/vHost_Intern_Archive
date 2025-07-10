@@ -1,0 +1,27 @@
+Username: trinnm
+Password: rM!(LVJn2PSy.Ae;
+
+Máy 1:
+WAN: 45.122.223.120
+LAN tuần 1: 192.168.186.24
+LAN tuần 2: 10.0.24.1/24
+
+Máy 2:
+LAN: 10.0.24.2/24
+Gateway: 10.0.24.1
+
+
+- Mở cấu hình netplan: 
+sudo nano /etc/netplan/00-installer-config.yaml
+- Mở file cấu hình SSH:
+sudo nano /etc/ssh/sshd_config
+- Restart SSH:
+sudo systemctl restart ssh
+- SSH máy Proxmox qua cmd Windows:
+ssh -p 2222 mntri@45.122.223.120
+
+ssh -v -p 2222 khoantn02@45.122.223.118
+
+sudo iptables -t nat -L -v -n
+
+sudo iptables -t nat -A PREROUTING -i ens18 -p tcp --dport 2222 -j DNAT --to-destination 10.0.0.2:22
