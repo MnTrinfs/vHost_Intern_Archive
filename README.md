@@ -34,7 +34,7 @@ $ git clone https://github.com/MnTrinfs/vHost_Intern_Archive
 ```
 
 > **Note**
-> The following lab exercises were conducted during my internship at vHost in 2025. Please note that these materials were based on the systems and configurations available at that time and may not reflect current best practices
+> The following lab exercises were conducted during my internship at vHost in 2025. Please note that these materials were based on the systems and configurations available at that time
 
 ## Contact
 <p>
